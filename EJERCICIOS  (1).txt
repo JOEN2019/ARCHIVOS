@@ -1,0 +1,1216 @@
+EJERCICOS DE ESCRITURA 
+
+EJERCICIO 1
+
+package contraseña;
+import java.util.*;
+/**
+ *
+ * @author CC3B
+ */
+public class Contraseña {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+         String nombre="josue",respuesta=" ";
+        int n=1;
+         Scanner sc=new Scanner(System.in);
+         System.out.print("introduse el nombre del usuario = ");
+         respuesta=sc.nextLine();
+         if (respuesta.equals(nombre)){
+              System.out.print("bienvenido  ");
+         }
+         else{
+            System.out.print("usuario incorecto introduse nuevamente tu usuario = ");
+         respuesta=sc.nextLine();   
+   n++;
+         }
+         if (n==8){
+             
+             
+         }
+    }
+    
+
+}
+
+
+------------------------------------------------------------------------------------------
+EJERCICIO 2
+
+package p2019;
+import java.util.*;
+
+public class P2019 {
+
+    
+    public static void main(String[] args) {
+     int n1, n2;
+     Scanner sc=new Scanner(System.in);
+        System.out.println("introduce 1");
+        n1=sc.nextInt();
+        System.out.println("introduce 2");
+        n2=sc.nextInt();
+        System.out.println("las sumas de los valores ingresados es : "+ (n1+n2)+"\n la resta es :" +(n1-n2)+"\n la multiplicacion es : " +(n1*n2)+"\n la divicion  es : " +(n1%n2));
+      
+       
+    }
+    
+}
+-------------------------------------------------------------------------------------------
+
+ EJERCICIO 3
+package nota2;
+import java.util.*;
+/**
+ *
+ * @author CC3B
+ */
+public class Nota2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+         int n1;
+         Scanner sc=new Scanner(System.in);
+         System.out.print("introduse la nota = ");
+         n1=sc.nextInt();
+         if (n1>=7){
+              System.out.println("nota"+n1);
+               System.out.print("    ");
+             System.out.print("aprobado");
+         }
+         else {
+              System.out.print("nota"+n1);
+               System.out.println("   ");
+              System.out.print("reprobado");
+    }
+    
+    }
+}
+------------------------------------------------------------------------------------------
+EJERCICIO 4
+
+package ejercicio;
+import java.util.Scanner;
+public class Ejercicio {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n = 0,n1=0,n2=0,sum,res = 0;
+        int i=0;
+        int tosl;
+        Scanner readere=new Scanner(System.in);
+        System.out.println("ingrese su valor");
+        n=sc.nextInt();
+        
+        while(n>i){
+             System.out.println("ingre ingrese su valores");
+             sum=readere.nextInt();
+             if(sum>0){
+                 n1++;
+             }
+             if(sum<5){
+                 n2++;  
+             }
+            i++; 
+            tosl = n1+n2;
+        }
+         System.out.println("sifra mayor "+""+n2);
+         System.out.println("si framenor "+""+n1);
+         System.out.println("total de ambas"+" "+tosl); 
+    } 
+    }
+ 
+------------------------------------------------------------------------------------------
+EJERCICIO 5
+
+package promedio;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class Promedio {
+
+    public static void main(String[] args) {
+     double nota1,nota2,nota3,promedio,suma;
+        Scanner sc=new Scanner(System.in);
+       
+           System.out.print("ingrese la nota 1 = ");
+         nota1=sc.nextDouble();
+    while(nota1>10){
+         System.out.print("ingrese nueva mente la nota ");
+          System.out.println("ingrese la nota 1 = ");
+         nota1=sc.nextDouble(); 
+    }
+         System.out.print("ingrese la nota 2 = ");
+         nota2=sc.nextDouble();
+             while(nota1>10){
+         System.out.print("ingrese nueva mente la nota 2 ");
+          System.out.println("ingrese la nota 2 = "
+                  + "2 = ");
+         nota2=sc.nextDouble(); 
+    }
+         System.out.print("ingrese la nota 3 = ");
+         nota3=sc.nextDouble();
+             while(nota3>10){
+         System.out.print("ingrese nueva mente la nota ");
+          System.out.println("ingrese la nota 3 = ");
+         nota3=sc.nextDouble(); 
+    }
+     suma=nota1+nota2+nota3/3;
+     promedio=suma/3;
+      if (promedio>=7&&promedio<=10){
+          System.out.println("["+promedio+"]"+"["+"APROBADO"+"]");
+      }
+       if (promedio<7){
+          System.out.println("["+promedio+"]"+"["+"REPROBADO"+"]");
+      }
+      
+    }
+    
+}
+------------------------------------------------------------------------------------------
+EJERCICIO 6
+
+package notaspromedio;
+import java.util.Scanner;
+
+public class Notaspromedio {
+
+    public static void main(String[] args) {
+double p1,p2,p3;
+double l1,l2,l3;
+double  r1,r2,r3,r4,r5,r6;
+double n1,n2,n3,k;
+    
+        Scanner sc=new Scanner(System.in);
+          System.out.print("ingrese la nota del la boratorio 1 = ");
+         l1=sc.nextDouble();
+         r1=l1*0.40;
+           System.out.print("ingrese la nota del parcial 1 = ");
+         p1=sc.nextDouble();
+         r2=p1*0.60;
+         n1=r1+r2;
+     System.out.print("ingrese la nota del laboratorio 2 = ");
+         l2=sc.nextDouble();
+         r3=l2*0.40;
+            System.out.print("ingrese la nota del parcial 2 = ");
+         p2=sc.nextDouble();
+         r4=p2*0.60;
+         n2=r3+r4;
+            System.out.print("ingrese la nota del laboratorio 3 = ");
+         l3=sc.nextDouble();
+         r5=l3*0.40;
+            System.out.print("ingrese la nota del parcial 3= ");
+         p3=sc.nextDouble();
+         r6=p3*0.60;
+     n3=r5+r6;
+    
+     k=n1+n2+n3/6;
+
+      if (k>=7&&k<=10){
+          System.out.println("["+k+"]"+"["+"APROBADO"+"]");
+      }
+       if (k<7){
+          System.out.println("["+k+"]"+"["+"REPROBADO"+"]");
+      }
+      
+    }
+    
+}
+-------------------------------------------------------------------------------------------
+EJRCICIO 7
+
+package venta.de.zapatos;
+
+import java.util.Scanner;
+ 
+public class VentaDeZapatos {
+
+  
+    public static void main(String[] args) {
+          double zapatos,precio,TOTAL;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("........BIEN VENIDO ALA VENTA DE ZAPATOS............ ");
+        System.out.print("INGRESE EL PRECIO DE LOS ZAPATOS  =  ");
+ zapatos=sc.nextDouble();
+             if (zapatos<150){
+                 System.out.println("EL PAGO SERA DE SUS ZAPATOS  $ "+zapatos);
+             }
+     if (zapatos>=150){
+  
+         precio=zapatos*0.20;
+         TOTAL=zapatos-precio;
+         System.out.println(" SUS PARES DE ZAPATOS SELES DESCONTARA UN 20% DE LA TARIFA ");
+          System.out.println("El DESCUENTO DE SUS ZAPTOS SERA $ "+precio);
+           System.out.println("EL PAGO SERA DE SUS ZAPATOS  SERA $ "+TOTAL);
+     }
+    }
+    
+}
+-----------------------------------------------------------------------------------------
+
+EJERCICIO 8
+
+package salario;
+import java.util.Scanner;
+
+public class SALARIO {
+
+ 
+    public static void main(String[] args) {
+          double horas,t1,t2,t3,horas1,horax;
+        Scanner sc=new Scanner(System.in);
+          System.out.print("INGRESE LAS HORAS TRABAJADAS  =  ");
+ horas=sc.nextDouble();
+        System.out.print("INGRESE LAS HORAS  EXTRAS TRABAJADAS  =  ");
+ horas1=sc.nextDouble();
+ horax=horas1*20;
+        if (horas<=40){
+            t1=horas*10+(horax);
+              System.out.println("SU SALARIO SERA DE $  "+t1);
+         
+        }
+           if (horas>41){
+            t2=horas*15+(horax);
+            
+              System.out.println("SU SALARIO SERA DE $  "+t2);
+         
+        }
+       
+    }
+    
+}
+------------------------------------------------------------------------------------------
+
+EJERCICIO 9
+
+package numero.mayor;
+import java.util.Scanner;
+public class NumeroMayor {
+
+    
+    public static void main(String[] args) {
+          int n1,n2,n3,n4,n5,numeros ;
+        Scanner sc=new Scanner(System.in);
+           System.out.print("ingrese un numero =");
+            n1=sc.nextInt();
+            
+              System.out.print("ingrese un numero =");
+            n2=sc.nextInt();
+            
+              System.out.print("ingrese un numero =");
+            n3=sc.nextInt();
+            
+              System.out.print("ingrese un numero =");
+            n4=sc.nextInt();  
+            
+            System.out.print("ingrese un numero  =");
+            n5=sc.nextInt();
+            
+                        System.out.println("LOS NUMEROS INGRESADOS FUERON "+"/"+n1+ "/"+n2+"/"+n3+"/"+n4+"/"+n5);
+
+            if (n1>n2&&n1>n3&&n1>n4&&n1>n5){
+                System.out.println("EL NUMERO9 MAYOR ES "+n1);
+            }
+             if (n2>n1&&n2>n3&&n2>n4&&n2>n5){
+                System.out.println("EL NUMERO9 MAYOR ES "+n2);
+            }
+             if (n3>n1&&n3>n2&&n3>n4&&n3>n5){
+                System.out.println("EL NUMERO9 MAYOR ES "+n3);
+            }
+              if (n4>n1&&n4>n2&&n4>n3&&n4>n5){
+                System.out.println("EL NUMERO9 MAYOR ES "+n4);
+            }
+               if (n5>n1&&n5>n2&&n5>n3&&n5>n4){
+                System.out.println("EL NUMERO9 MAYOR ES "+n5);
+            }
+    }
+    
+}
+-----------------------------------------------------------------------------------------
+EJERCICIO 10
+
+¬package gastos;
+
+import java.util.Scanner;
+public class Gastos {
+
+   
+    public static void main(String[] args) {
+        double colegiatura,total,totales ;
+     double gastos,p,t;
+        Scanner sc=new Scanner(System.in);
+            System.out.print("INGRESE CUANTOS HIJOS TIENE ESTUDANDO EN EL COLEGIO LA PALMERA =  ");
+ colegiatura=sc.nextDouble();
+ 
+ if (colegiatura<5){
+     total=colegiatura*55;
+         System.out.print(" USTED DEVBERA PAGAR POR LA COLEGIO $  "+total);
+System.out.println("USTED DEVERA PAGAR POR EL AGUA POTABLE  $ 50");
+System.out.println("USTED DEVERA PAGAR $ 20");
+p=total+50+20;
+System.out.println("EL TOTAL DE GASTOS ES DE  $ "+p);
+ }
+ if (colegiatura>=5){
+     totales=colegiatura*55;
+     gastos=totales*0.50;
+   
+         System.out.println(" USTED DEVBERA PAGAR POR LA COLEGIO $  "+gastos);
+System.out.println("USTED DEVERA PAGAR POR EL AGUA POTABLE  $ 50");
+System.out.println("USTED DEVERA PAGAR $ 20");
+t=gastos+50+20;
+System.out.println("EL TOTAL DE GASTOS ES DE  $ "+t);
+ }
+    }
+    
+}
+-----------------------------------------------------------------------------------------
+EJERCICIO 11
+
+package while_1;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class While_1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        int var=1;
+        while(var<=100){
+            System.out.println("interado "+ var+" veces");
+            System.out.print("");
+            var++;
+        }
+          
+                
+    }
+    
+}
+------------------------------------------------------------------------------------------
+
+EJERCICO 12
+
+package while_2;
+import java.util.Scanner;
+
+/**
+ *
+ * @author CC3B
+ */
+public class While_2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic hereScanner sc=new Scanner(System.in);
+        int contador;
+        int fin;
+        Scanner readere=new Scanner(System.in);
+        System.out.println("Ingrese el valor inicial");
+        contador=readere.nextInt();
+         System.out.println("Ingrese el valor final");
+        fin=readere.nextInt();
+        while(contador<=fin){
+            System.out.println("Valor actual " + contador);
+            System.out.print("");
+            contador++;
+        }
+    }
+         
+}
+------------------------------------------------------------------------------------------
+EJERCICIO 13
+
+package while_3;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class While_3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int n;
+        int i=1;
+        Scanner readere=new Scanner(System.in);
+        
+        System.out.println("Ingrese numero");
+        n=readere.nextInt();
+        System.out.println("");
+        while(i<=10){
+            System.out.println(n+"x" +i+"= "+n*i);
+            System.out.print("");
+            i++;
+           
+        }
+    }
+    
+}
+---------------------------------------------------------------------------------------
+
+EJERCICIO 14
+
+package while_4;
+import java.util.Scanner;
+public class While_4 {
+
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        int i;
+        int f;
+        System.out.print("Ingrese el numero de  inicio =");
+        i=teclado.nextInt();
+        System.out.print("Ingrese el numero final =");
+        f=teclado.nextInt();
+              System.out.println("  ");
+                  
+        int total;
+ 
+       while (i<=f){
+           int h=1;
+                int u=i;
+                      System.out.println("tabla de multiplicar "+u);
+                  u++;
+           while (h<=10){
+               
+               total=i*h;
+               System.out.println(i+ "x" +h+ "=" +total );
+               
+               h++;
+               
+           }
+        
+           i++;
+            
+           System.out.println("");
+       }
+
+    }
+    
+}
+-------------------------------------------------------------------------------------
+EJERCICIO 15
+
+package pkgfor.pkg1;
+import java.util.Scanner;
+public class For1 {
+
+    public static void main(String[] args) {
+           Scanner teclado=new Scanner(System.in);
+           for(int num=1;num<=100;num++){
+                System.out.println(num);
+           }
+    }
+    
+}
+-----------------------------------------------------------------------------------------
+EJERCICIO 16
+
+package pkgfor.pkg2;
+import java.util.Scanner;
+
+public class For2 {
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        
+        for(int i=0;i<=100;i=i+2){
+              System.out.println(i);
+           }
+     
+    }
+    
+}
+package pkgfor.pkg3;
+import java.util.Scanner;
+
+public class For3 {
+
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        
+         for(int i=0;i<=100;i=i+5){
+              System.out.println(i);
+           }
+    }
+    
+}
+
+-----------------------------------------------------------------------------------------
+EJERCICIO 17
+
+package pkgfor.pkg4;
+import java.util.Scanner;
+public class For4 {
+
+   
+    public static void main(String[] args) {
+      Scanner teclado=new Scanner(System.in);
+        int i;
+        System.out.print("Ingrese el numero de  inicio =");
+        i=teclado.nextInt();
+              int P;
+        System.out.print("Ingrese el numemero de salida =");
+        P=teclado.nextInt();
+          for( i=i;i<=P;i=i+2){
+              System.out.println(i);
+           }
+    }
+    
+}
+---------------------------------------------------------------------------------
+EJERCICIO 18
+
+package pkgfor.pkg5;
+
+import java.util.Scanner;
+public class For5 {
+
+    public static void main(String[] args) {
+       Scanner teclado=new Scanner(System.in);
+        int i;
+          int P;
+              int total;
+        System.out.print("Ingrese el numero de  inicio =");
+        i=teclado.nextInt();
+            
+        System.out.print("Ingrese el numemero de salida =");
+        P=teclado.nextInt();
+          for( i=i;i<=P;){
+            int  k=1;
+               for( k=k;k<=10;){
+                 total=i*k;
+               System.out.println(i+ "x" +k+ "=" +total );
+               k++;
+           }
+              System.out.println( );  
+          i++;
+          }
+    }
+    
+}
+
+---------------------------------------------------------------------------------
+EJERCICIO 19
+
+package mumeros.mayores;
+import java.util.Scanner;
+public class MumerosMayores {
+
+  
+    public static void main(String[] args) {
+         Scanner teclado=new Scanner(System.in);
+         int x,y,suma=0,num,v0=0,v5=0;
+           System.out.print("CUANTOS NUMEROS DESEA INGRESAR =");
+        y=teclado.nextInt();
+        x=1;
+        while (x<=y){
+             System.out.print("INGRESE NUMERO =");
+             num=teclado.nextInt();
+             if (num>0){
+                 v0++;
+             }
+             if (num<5){
+                 v5++;
+             }
+             suma=suma+num;
+             x++;
+        }
+     System.out.println("MAYOR QUE 0 ="+v0);
+      System.out.println("MENOR QUE 5 ="+v5);
+       System.out.println("LA SUMA ES  ="+suma);
+    }
+    
+}
+package hola mundo ;
+ import java.util.Scanner;
+
+public class Sumainterfasgrafica {
+
+  public static void main(String[] args) {
+        
+          
+        System.out.print("HOLA MUNDO");
+        
+    
+    }
+    
+}
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+EJERCICOS CON INTERFAS GRAFICA 
+
+ EJERCICIO 1
+
+package sumainterfasgrafica;
+ import javax.swing.JOptionPane;
+
+public class Sumainterfasgrafica {
+
+  public static void main(String[] args) {
+        
+        JOptionPane.showMessageDialog(null, "HOLA MUNDO " );
+        
+        System.exit(0);
+    }
+    
+}
+
+------------------------------------------------------------------------
+EJERCICIO 2
+
+package interfas.graficas.s.r.d.m;
+ import javax.swing.JOptionPane;
+public class INTERFASGRAFICASSRDM {
+
+    
+    public static void main(String[] args) {
+        int suma,resta,multiplicacion,divicion;
+  int numero = Integer.parseInt(JOptionPane.showInputDialog("ingrese el numero "));
+    int numero2 = Integer.parseInt(JOptionPane.showInputDialog("ingrese el numero "));
+  suma=numero+numero2;
+  resta=numero-numero2;
+  multiplicacion=numero*numero2;
+  divicion=numero/numero2;
+   JOptionPane.showMessageDialog(null, "suma= " + suma+"      "+  "resta= "+resta+"   "+"multiplicacion= "+multiplicacion+"  "+"divicion= "+divicion);
+    }
+    
+}
+----------------------------------------------------------------------
+EJERCICIO 4
+
+package interfas.grafica.contraseña;
+ import javax.swing.JOptionPane;
+
+public class InterfasGraficaContraseña {
+
+    
+    public static void main(String[] args) {
+           String nombre="josue",respuesta=" ";
+    respuesta = JOptionPane.showInputDialog("ingrese la contraseña ");
+    if (respuesta.equals(nombre)){
+        
+          JOptionPane.showMessageDialog(null, "BIENBENIDO" );
+    }
+    else{
+         JOptionPane.showMessageDialog(null, " ERROR DE CONBTRASEÑA " ); 
+    }
+    }
+    
+}
+
+-------------------------------------------------------------------------
+
+EJERCICIO 5
+
+package interfas.notas;
+
+ import javax.swing.JOptionPane;
+public class INTERFASNOTAS {
+
+   
+    public static void main(String[] args) {
+      int numero = Integer.parseInt(JOptionPane.showInputDialog("INGRESE LA NOTA  "));
+             if (numero>=7){
+                 JOptionPane.showMessageDialog(null, " LA NOTA ES= "+numero+"   "+"APROBADO" ); 
+              
+         }
+         else {
+            JOptionPane.showMessageDialog(null, " LA NOTA ES= "+numero+"     "+"REPROBADO" ); 
+    }
+    
+    }
+    
+}
+--------------------------------------------------------------------------
+EJERCICIO 6
+
+package interfas.grafica.promedio;
+import javax.swing.JOptionPane;
+
+public class InterfasGraficaPromedio {
+
+  
+    public static void main(String[] args) {
+        int suma,promedio;
+       int numero = Integer.parseInt(JOptionPane.showInputDialog("INGRESE LA NOTA 1 "));
+        int numero1 = Integer.parseInt(JOptionPane.showInputDialog("INGRESE LA NOTA 2 "));
+         int numero2 = Integer.parseInt(JOptionPane.showInputDialog("INGRESE LA NOTA 3 "));
+          suma=numero+numero1+numero2;
+     promedio=suma/3;
+      if (promedio>=7&&promedio<=10){
+                JOptionPane.showMessageDialog(null," PROMEDIO= "+"["+promedio+"]"+"   ["+"APROBADO"+"]"  ); 
+         
+      }
+       if (promedio<7){
+             JOptionPane.showMessageDialog(null,"PROMEDIO= "+"["+promedio+"]"+"   ["+"REPROBADO"+"]"  ); 
+         
+      }
+         
+    }
+    
+}
+
+-----------------------------------------------------------------------
+EJERCICIO 7
+
+package interfas.grafica.ventas.de.zapatos;
+import javax.swing.JOptionPane;
+public class INTERFASGRAFICAVENTASDEZAPATOS {
+
+    public static void main(String[] args) {
+      double precio;
+      double total;
+       JOptionPane.showMessageDialog(null,"BIENBENIDO ALA VENTA DE ZAPATOS "  ); 
+         int venta = Integer.parseInt(JOptionPane.showInputDialog("INGRESE EL COTO DE LOS ZAPATOS "));
+         if(venta<150){
+              JOptionPane.showMessageDialog(null,"LOS ZAPATOS COSTARAN $"+venta  ); 
+         }
+         if (venta>=150){
+         
+          precio=venta*(0.20);
+         total=venta-precio;
+              JOptionPane.showMessageDialog(null,"LOS ZAPATOS QUE COMPRO SE LES DESCONTARAN UN 20%"  ); 
+              JOptionPane.showMessageDialog(null,"EL DESCUENTO DE LOS ZAPATOS SERA DE $"+total  ); 
+              JOptionPane.showMessageDialog(null,"EL VALOR DE LOS ZAPATOS $:   "
+                      + ""+precio  ); 
+             
+         }
+    }
+    
+}
+-------------------------------------------------------------------------
+EJERCICIO 8
+
+package interfas.grafica.salario;
+import javax.swing.JOptionPane;
+public class INTERFASGRAFICASALARIO {
+    public static void main(String[] args) {
+        
+    int hora,t,t2;
+          int trabajo = Integer.parseInt(JOptionPane.showInputDialog("INGRESE LAS HORAS DE TRABAJO ")); 
+           
+             hora=trabajo*20;
+        if (hora<=40){
+            t=hora*10+(trabajo);
+             JOptionPane.showMessageDialog(null,"su salario sera $"+t ); 
+              System.out.println("SU SALARIO SERA DE $  "+t);
+         
+        }
+           if (hora>41){
+            t2=hora*15+(trabajo);
+            JOptionPane.showMessageDialog(null,"su salario sera $"+t2 ); 
+              System.out.println("SU SALARIO SERA DE $  "+t2);
+           }
+        
+    }
+    
+}
+
+------------------------------------------------------------------------
+
+ EJERCICIO 9
+
+package interfas.grafica.numeros.mayores;
+import javax.swing.JOptionPane;
+
+public class InterfasGraficaNumerosMayores {
+
+ 
+    public static void main(String[] args) {
+     int n1 = Integer.parseInt(JOptionPane.showInputDialog("INGRESE EL NUMERO  ")); 
+      int n2 = Integer.parseInt(JOptionPane.showInputDialog("INGRESE EL NUMERO  ")); 
+        int n3 = Integer.parseInt(JOptionPane.showInputDialog("INGRESE EL NUMERO  ")); 
+          int n4 = Integer.parseInt(JOptionPane.showInputDialog("INGRESE EL NUMERO  ")); 
+            int n5 = Integer.parseInt(JOptionPane.showInputDialog("INGRESE EL NUMERO  ")); 
+             if (n1>n2&&n1>n3&&n1>n4&&n1>n5){
+                JOptionPane.showMessageDialog(null,"EL NUMERO MAYOR ES  "+n1 ); 
+            }
+             if (n2>n1&&n2>n3&&n2>n4&&n2>n5){
+                JOptionPane.showMessageDialog(null,"EL NUMERO MAYOR ES "+n2 ); 
+            }
+             if (n3>n1&&n3>n2&&n3>n4&&n3>n5){
+                 JOptionPane.showMessageDialog(null,"EL NUMERO MAYOR ES "+n3 ); 
+            }
+              if (n4>n1&&n4>n2&&n4>n3&&n4>n5){
+                 JOptionPane.showMessageDialog(null,"EL NUMERO MAYOR ES  "+n4 ); 
+            }
+               if (n5>n1&&n5>n2&&n5>n3&&n5>n4){
+                  JOptionPane.showMessageDialog(null,"EL NUMERO MAYOR ES  "+n5 ); 
+            }
+    }
+    
+}
+----------------------------------------------------------------------------
+EJERCICIO 10
+
+package interfasgrafica.colejiatura.gastos;
+import javax.swing.JOptionPane;
+
+public class InterfasgraficaColejiaturaGastos {
+
+   
+    public static void main(String[] args) {
+        double total,p,gastos,totales,t;
+       
+     int colegiatura = Integer.parseInt(JOptionPane.showInputDialog("INGRESE CUANTO HIJOS TIENE EN EL COLEGIO  ")); 
+        
+         if (colegiatura<5){
+     total=colegiatura*55;
+       JOptionPane.showMessageDialog(null,"USTED DEBERA PAGAR POR LA COLEGIATURA $ "+total ); 
+         JOptionPane.showMessageDialog(null,"USTED DEBERA PAGAR POR EL AGUA POTABLE $ 50" ); 
+           JOptionPane.showMessageDialog(null,"USTED DEVRERA PAGAR $20 " ); 
+p=total+50+20;
+  JOptionPane.showMessageDialog(null,"EL TOTAL DE LOS GASTOS ES $"+p ); 
+ }
+  if (colegiatura>=5){
+     totales=colegiatura*55;
+     gastos=totales*0.50;
+   JOptionPane.showMessageDialog(null,"USTED DEVERA PAGAR POR LA COLEGI0 $"+gastos ); 
+     JOptionPane.showMessageDialog(null,"USTED DEBERA PAGAR POR EL AGUA POTABLE $ 50" ); 
+           JOptionPane.showMessageDialog(null,"USTED DEVRERA PAGAR $20 " ); 
+t=gastos+50+20;
+  JOptionPane.showMessageDialog(null,"EL TOTAL DE LOS GASTOS ES $"+t ); 
+ }      
+        
+    }
+    
+}
+
+------------------------------------------------------------------------
+
+EJERCICIO 11
+
+package interfas.grafica.numeros;
+import javax.swing.JOptionPane;
+public class InterfasGraficaNumeros {
+    public static void main(String[] args) {
+        int var=1;
+        while(var<=100){
+             JOptionPane.showMessageDialog(null,"interado   "+var+"   veses" ); 
+            var++;
+        }
+       
+      
+    }
+    
+}
+
+-------------------------------------------------------------------------
+EJERCICIO 12
+
+package interfas.grafica.ejercicio;
+import javax.swing.JOptionPane;
+public class InterfasGraficaEjercicio {
+
+    public static void main(String[] args) {
+        
+     int INICIO = Integer.parseInt(JOptionPane.showInputDialog("INGRESE INICIAL "));
+        int FINAL = Integer.parseInt(JOptionPane.showInputDialog("INGRESE EL VALOR FINAL "));
+        
+         while(INICIO<=FINAL){
+                 JOptionPane.showMessageDialog(null,"VALOR ACTUAL  "+INICIO ); 
+         
+            INICIO++;
+        }
+        
+        
+    }
+    
+}
+
+-------------------------------------------------------------------------
+EJERCICIO 13
+
+package multiplicacion.interfas.grafica;
+import javax.swing.JOptionPane;
+
+public class MULTIPLICACIONINTERFASGRAFICA {
+
+   
+    public static void main(String[] args) {
+        int i=1;
+         int INICIO = Integer.parseInt(JOptionPane.showInputDialog("INGRESE INICIAL "));
+        
+          while(i<=10){
+                   JOptionPane.showMessageDialog(null,INICIO+"x" +i+"= "+INICIO*i ); 
+          
+            i++;
+          }
+        
+        
+        
+      
+      
+    }
+    
+}
+
+-----------------------------------------------------------------------
+EJERCICIO 14
+package ejer01;
+
+import javax.swing.JOptionPane;
+public class Ejer01 {
+
+  
+    public static void main(String[] args) {
+        String e1;
+        int e;
+        int resultado;
+		
+		e1=JOptionPane.showInputDialog("Cual tabla desea visualizar");
+		e=Integer.parseInt(e1);
+                
+        
+		
+		for (int i=1;i<11;i++){
+      
+                     resultado=e*i;
+			JOptionPane.showMessageDialog(null, e +" x "+ i +" = " +resultado);   
+                       
+              
+                    
+		}
+    System.exit(0);
+		
+
+    }
+    
+               
+    }
+-----------------------------------------------------------------------------------------------------
+EJERCICIO 15
+
+
+/*
+ *RUTINA DE INGRESO DE NOTAS
+ */
+package ejer01;
+
+import javax.swing.JOptionPane;
+public class Ejer01 {
+
+  
+    public static void main(String[] args) {
+        
+        String l1,p1,l2,p2,l3,p3,pr1,pr2,pr3,promfinal1;
+        double lab1,par1,lab2,par2,lab3,par3, prom1,prom2,prom3,promfinal;
+       
+       JOptionPane.showMessageDialog(null,"Bienvenidos al ingreso de notas");
+      
+       l1=JOptionPane.showInputDialog("Digite el 1er laboratorio");
+       lab1=Integer.parseInt(l1);
+       
+       while (lab1<0 || lab1>10){
+           
+          JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           l1=JOptionPane.showInputDialog("Digite el 1er laboratorio");
+           lab1=Integer.parseInt(l1);
+       }
+       
+       p1=JOptionPane.showInputDialog("Digite el 1er parcial");
+       par1=Integer.parseInt(p1);
+       while (par1<0 || par1>10){
+           
+          JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+         p1=JOptionPane.showInputDialog("Digite el 1er parcial");
+         par1=Integer.parseInt(p1);
+       }
+       
+       l2=JOptionPane.showInputDialog("Digite el 2do laboratorio");
+       lab2=Integer.parseInt(l2);
+       while (lab2<0 || lab2>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           l2=JOptionPane.showInputDialog("Digite el 2do laboratorio");
+           lab2=Integer.parseInt(l2);
+       }
+       
+        p2=JOptionPane.showInputDialog("Digite el 2do parcial");
+           par2=Integer.parseInt(p2);
+       while (par2<0 || par2>10){
+ 
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           l2=JOptionPane.showInputDialog("Digite el 2do parcial");
+           lab2=Integer.parseInt(l2);
+       }
+       
+      l3=JOptionPane.showInputDialog("Digite el  3er laboratorio");
+           lab3=Integer.parseInt(l3);
+       while (lab3<0 || lab3>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           l3=JOptionPane.showInputDialog("Digite el 3er laboratorio");
+           lab3=Integer.parseInt(l3);
+       }
+       
+        p3=JOptionPane.showInputDialog("Digite el 3er parcial");
+           par3=Integer.parseInt(p3);
+       while (par3<0 || par3>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+            p3=JOptionPane.showInputDialog("Digite el 3er parcial");
+           par3=Integer.parseInt(p3);
+       
+      
+       }
+       
+       prom1=(lab1*0.4)+(par1*0.6);
+       prom2=(lab2*0.4)+(par2*0.6);
+       prom3=(lab3*0.4)+(par3*0.6);
+         
+         promfinal=(prom1+prom2+prom3)/3;
+       
+       
+      JOptionPane.showMessageDialog(null,"El promedio de las notas es  " + promfinal);
+       
+       if (promfinal>=7){
+           JOptionPane.showMessageDialog(null,"Estado: " + "\nAPROBADO");
+           
+       }
+       else {
+          JOptionPane.showMessageDialog(null,"Estado: " + "\nREPROBADO");
+           
+       }
+       
+	System.exit(0);	
+
+    }
+    
+               
+    }
+---------------------------------------------------------------------------------------------------
+
+EJERCICIO 16
+
+/*
+ *RUTINA DE SUMA, RESTA , MULTIPLICACION Y DIVISION DE NUMEROS
+ */
+package ejer01;
+
+import javax.swing.JOptionPane;
+public class Ejer01 {
+
+  
+    public static void main(String[] args) {
+        
+        String n1,n2;
+        int num1,num2;
+        
+   
+        n1=JOptionPane.showInputDialog("Introduzca el 1er dato");
+        num1=Integer.parseInt(n1);
+        
+        n2=JOptionPane.showInputDialog("Introduzca el 2do dato");
+        num2=Integer.parseInt(n2);
+        
+        
+       JOptionPane.showMessageDialog(null," La suma de los valores ingresados es : " + (num1+num2) + "\n La resta es : " + (num1-num2) + "\n La Multiplicacion es : " + (num1*num2) + "\n La division es : " + (num1/num2) );
+       
+       System.exit(0);
+		
+
+    }
+    
+               
+    }
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EJERCICIO 17
+/*
+ *RUTINA DE VALOR ACTUAL
+ */
+package ejer01;
+
+import javax.swing.JOptionPane;
+
+public class Ejer01 {
+
+  
+    public static void main(String[] args) {
+        
+        String contador1,fin1;
+        int contador;
+        int fin;
+        
+       contador1=JOptionPane.showInputDialog(null,"Ingrese el valor incial");
+       contador=Integer.parseInt(contador1);
+       
+       fin1=JOptionPane.showInputDialog(null,"Ingrese el valor final");
+       fin=Integer.parseInt(fin1);
+        
+        
+        
+        
+        while(contador<=fin){
+              
+            JOptionPane.showMessageDialog(null,"Valor actual = " + contador);
+            contador++;
+                 
+            
+        }
+		
+
+    }
+    
+               
+    }
+---------------------------------------------------------------------------------------------------------------------------
+EJERCICIO 18
+
+
+
+/*
+ * RUTINA DE NUMEROS DE 0 A 100 
+ *DANDO VALOR INCIAL Y VALOR FINAL
+ */
+package ejer01;
+
+import javax.swing.JOptionPane;
+public class Ejer01 {
+
+    
+    public static void main(String[] args) {
+        
+        String e1 , s1 ;
+       int e,s;
+        
+        
+        e1=JOptionPane.showInputDialog(null,"Introduce el valor inicial");
+        e=Integer.parseInt(e1);
+        
+        s1=JOptionPane.showInputDialog(null,"Introduce el valor final");
+        s=Integer.parseInt(s1);
+        
+     
+        JOptionPane.showMessageDialog(null, "Numeros del 0 al 100 ");
+        for (int num=e;num<=s;num=num+2){
+            
+             JOptionPane.showMessageDialog(null, "Numero = " +num);
+
+        }
+       System.exit(0);  
+    }
+    }
